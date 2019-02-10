@@ -1,29 +1,28 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import ReactDOM from "react-dom";
 
 import "./fonts.css";
 import "./styles.css";
 
 function FeedbackloopCaps({ right }) {
-  return <div className={`cap ${right ? 'right' : 'left'}`} />;
+  return <div className={`cap ${right ? "right" : "left"}`} />;
 }
 
 const stepClassName = number => {
-  if (number === 1) return 'one';
-  if (number === 2) return 'two';
-  if (number === 3) return 'three';
-  if (number === 4) return 'four';
+  if (number === 1) return "one";
+  if (number === 2) return "two";
+  if (number === 3) return "three";
+  if (number === 4) return "four";
 };
 
 function Step({ number, children, activeStep }) {
   const isActive = activeStep === number;
   const isDimmed = activeStep < number;
-  console.log({ number, children, activeStep });
 
   const nameClass = stepClassName(number);
-  const activeClass = isActive ? 'active' : '';
-  const dimmedClass = isDimmed ? 'dimmed' : '';
+  const activeClass = isActive ? "active" : "";
+  const dimmedClass = isDimmed ? "dimmed" : "";
 
   return (
     <div className={`step ${nameClass} ${activeClass} ${dimmedClass}`}>
@@ -96,7 +95,7 @@ function Header() {
     <header className="header">
       <div
         className="header-bg"
-        style={{ transform: 'rotate(180deg) translate3d(1px, -100%, 0px);' }}
+        style={{ transform: "rotate(180deg) translate3d(1px, -100%, 0px)" }}
       />
       <img
         role="presentation"
