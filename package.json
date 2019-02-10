@@ -1,7 +1,7 @@
 {
-  "name": "new",
+  "name": "alchemy-process-css-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Example conversion of static image design to an interactive component.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
@@ -18,10 +18,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
