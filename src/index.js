@@ -1,19 +1,19 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactDOM from "react-dom";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ReactDOM from 'react-dom';
 
-import "./fonts.css";
-import "./styles.css";
+import './fonts.css';
+import './styles.css';
 
 function FeedbackloopCaps({ right }) {
-  return <div className={`cap ${right ? "right" : "left"}`} />;
+  return <div className={`cap ${right ? 'right' : 'left'}`} />;
 }
 
 const stepClassName = number => {
-  if (number === 1) return "one";
-  if (number === 2) return "two";
-  if (number === 3) return "three";
-  if (number === 4) return "four";
+  if (number === 1) return 'one';
+  if (number === 2) return 'two';
+  if (number === 3) return 'three';
+  if (number === 4) return 'four';
 };
 
 function Step({ number, children, activeStep }) {
@@ -21,8 +21,8 @@ function Step({ number, children, activeStep }) {
   const isDimmed = activeStep < number;
 
   const nameClass = stepClassName(number);
-  const activeClass = isActive ? "active" : "";
-  const dimmedClass = isDimmed ? "dimmed" : "";
+  const activeClass = isActive ? 'active' : '';
+  const dimmedClass = isDimmed ? 'dimmed' : '';
 
   return (
     <div className={`step ${nameClass} ${activeClass} ${dimmedClass}`}>
@@ -36,12 +36,12 @@ function Step({ number, children, activeStep }) {
 Step.propTypes = {
   children: PropTypes.node.isRequired,
   activeStep: PropTypes.number.isRequired,
-  number: PropTypes.number.isRequired
+  number: PropTypes.number.isRequired,
 };
 
 class TheProcess extends React.Component {
   state = {
-    activeStep: 1
+    activeStep: 1,
   };
 
   onNextStep = e => {
@@ -70,12 +70,12 @@ class TheProcess extends React.Component {
               </Step>
             </div>
             <div className="step-group">
-              <Step number={3} activeStep={activeStep}>
-                <strong>Validate</strong> to a single solution
-              </Step>
-              <div className="guide-line" />
               <Step number={4} activeStep={activeStep}>
                 <strong>Implement</strong> the ideal solution
+              </Step>
+              <div className="guide-line" />
+              <Step number={3} activeStep={activeStep}>
+                <strong>Validate</strong> to a single solution
               </Step>
             </div>
           </div>
@@ -95,7 +95,7 @@ function Header() {
     <header className="header">
       <div
         className="header-bg"
-        style={{ transform: "rotate(180deg) translate3d(1px, -100%, 0px)" }}
+        style={{ transform: 'rotate(180deg) translate3d(1px, -100%, 0px)' }}
       />
       <img
         role="presentation"
@@ -116,5 +116,5 @@ function App() {
   );
 }
 
-const rootElement = document.getElementById("root");
+const rootElement = document.getElementById('root');
 ReactDOM.render(<App />, rootElement);
