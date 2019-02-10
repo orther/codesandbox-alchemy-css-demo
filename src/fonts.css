@@ -1,0 +1,77 @@
+@font-face {
+    font-family: BrandonBold;
+    src: url(https://alchemy.codes/static/fonts/brandontext-bold-webfont.50682777.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/brandontext-bold-webfont.13d22bec.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: BrandonBoldItalic;
+    src: url(https://alchemy.codes/static/fonts/brandontext-bolditalic-webfont.7a5c7331.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/brandontext-bolditalic-webfont.fd879735.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: BrandonRegular;
+    src: url(https://alchemy.codes/static/fonts/brandontext-regular-webfont.b13bdbc5.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/brandontext-regular-webfont.75ef029c.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: BrandonMedium;
+    src: url(https://alchemy.codes/static/fonts/brandontext-medium-webfont.70b578bd.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/brandontext-medium-webfont.819371bd.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: BrandonRegularItalic;
+    src: url(https://alchemy.codes/static/fonts/brandontext-regularitalic-webfont.2893eced.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/brandontext-regularitalic-webfont.e85b6876.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: BrandonLight;
+    src: url(https://alchemy.codes/static/fonts/brandontext-light-webfont.82a60861.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/brandontext-light-webfont.dfde6e15.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Bodoni;
+    src: url(https://alchemy.codes/static/fonts/BodoniStd-Bold.45dcf5c9.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/BodoniStd-Bold.fde4fc24.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Bodoni;
+    src: url(https://alchemy.codes/static/fonts/BodoniStd-BoldItalic.9f906453.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/BodoniStd-BoldItalic.2a7d330e.woff) format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: PosterBodoni;
+    src: url(https://alchemy.codes/static/fonts/BodoniStd-Poster.ed7af246.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/BodoniStd-Poster.80061298.woff) format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: PosterBodoni;
+    src: url(https://alchemy.codes/static/fonts/BodoniStd-PosterItalic.715eca97.woff2) format("woff2"),url(https://alchemy.codes/static/fonts/BodoniStd-PosterItalic.13561b8f.woff) format("woff");
+    font-weight: 400;
+    font-style: italic
+}
+
+@font-face {
+    font-family: alchemy-thin;
+    src: url(https://alchemy.codes/static/fonts/alchemy-thin.b42d2389.eot);
+    src: url(https://alchemy.codes/static/fonts/alchemy-thin.b42d2389.eot) format("embedded-opentype"),url(https://alchemy.codes/static/fonts/alchemy-thin.fd4e8ddb.ttf) format("truetype"),url(https://alchemy.codes/static/fonts/alchemy-thin.b10f8f9c.woff) format("woff"),url(https://alchemy.codes/static/fonts/alchemy-thin.2ee2f55a.svg) format("svg");
+    font-weight: 400;
+    font-style: normal
+}

@@ -1,4 +1,231 @@
+*:focus {
+  outline: none;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
+}
+
+/*
+git@github.com:orther/codesandbox-alchemy-css-demo.git
+https://alchemy.codes/static/images/icon-alchemy-white.e2d695fd.svg
+*/
+
+
+header.header {
+  display: block;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background: #000;
+  z-index: 2;
+}
+
+header.header img {
+  margin: 1em auto;
+  width: 250px;
+  height: auto;
+}
+
+header.header>.header-bg {
+    background-image: url(https://alchemy.codes/static/images/wiggle-top.1ae50323.png);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    width: 1000%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transform: rotate(180deg) translateY(-100%);
+}
+
+.content {
+  margin: 300px auto;
+
+}
+
+.the-process {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: PosterBodoni,sans-serif;
+  font-weight: 400;
+  font-size: 1.875em;
+  margin: .25em 0;
+}
+
+.feedback-loop {
+  display: flex;
+  min-width: 800px;
+}
+
+.feedback-loop>.steps {
+  flex: 1 1;
+}
+
+.step-group {
+  display: flex;
+  align-items: center;
+  padding: 3em 0.2em;
+}
+
+.guide-line {
+  background-color: #82d300;
+  height: 0.3em;
+  flex: 1 1;
+  margin: 0 1em;
+}
+
+.feedback-loop .cap {
+  width: 100px;
+  height: 200px;
+  background-color: transparent;
+  border-top-left-radius: 10000px;
+  border-bottom-left-radius: 10000px;
+  border: 0.3em solid #82d300;
+  border-right: 0;
+  box-sizing: border-box;
+  margin: auto;
+}
+.feedback-loop .cap.right  {
+  transform: rotate(180deg);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+
+  opacity: 1;
+  transition: all 600ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.step.dimmed {
+  opacity: .2;
+  transition: all 600ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.step>.number,
+.step>.number-shadow,
+.step>.text {
+  margin: 0 0.3em;
+}
+
+.step .text {
+  color: #241f20;
+  font-family: BrandonRegular,sans-serif;
+  font-weight: 400;
+  font-size: 1.7em;
+  text-align: left;
+  width: 6em;
+  line-height: 1.3;
+  transform: scale(0.9,0.9);
+}
+
+.step .text strong {
+  font-family: BrandonMedium,sans-serif;
+  width: 5em;
+}
+
+.step .number,
+.step .number-shadow {
+  font-size: 2em;
+  border-radius: 2em;
+  height: 1.75em;
+  width: 1.75em;
+  line-height: 2em;
+  text-align: center;
+  font-family: Bodoni,sans-serif;
+  color: white;
+}
+.step .number-shadow {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  transition: all 600ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+.step.active .number-shadow {
+  opacity: .5;
+  transition: all 600ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+.step.one .number,
+.step.one .number-shadow {
+  background-color: #3e92ff
+}
+.step.two .number,
+.step.two .number-shadow {
+  background-color: #fa0009;
+}
+.step.three .number,
+.step.three .number-shadow {
+  background-color: #ffd300
+}
+.step.four .number,
+.step.four .number-shadow {
+  background-color: #f4a300
+}
+
+@keyframes pulse {
+  from { transform: scale(1); }
+  50% { transform: scale(1.45); }
+  to { transform: scale(1); }
+}
+
+.step .number-shadow {
+  animation-name: pulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+button.next-step {
+  display: flex;
+  align-items: center;
+  margin: 4px 4px 12px;
+  padding: 16px;
+  border-radius: 8px;
+  background: white;
+  user-select: none;
+  flex: 1 1;
+  font-size: 2em;
+
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.12), 0 1px 2px hsla(0, 0%, 0%, 0.24);
+  transition: all 150ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+button.next-step::after {
+  content: '';
+  border-radius: 10px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.15), 0 2px 4px hsla(0, 0%, 0%, 0.12);
+  transition: all 300ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+button.next-step:hover {
+  cursor: pointer;
+  transform: scale(1.005, 1.005);
+}
+button.next-step:hover::after {
+  opacity: 1;
+}
+button.next-step:active {
+  transform: scale3d(0.9995, 0.9995, 1);
+  transition: all 20ms cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+button.next-step:active::after {
+  opacity: 0;
+  transition: all 20ms cubic-bezier(0.02, 0.01, 0.47, 1);
 }
