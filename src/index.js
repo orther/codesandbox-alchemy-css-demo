@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 
 import './fonts.css';
 import './styles.css';
+import './media-query.css';
 
 function FeedbackloopCaps({ right }) {
   return <div className={`cap ${right ? 'right' : 'left'}`} />;
@@ -36,12 +37,12 @@ function Step({ number, children, activeStep }) {
 Step.propTypes = {
   children: PropTypes.node.isRequired,
   activeStep: PropTypes.number.isRequired,
-  number: PropTypes.number.isRequired,
+  number: PropTypes.number.isRequired
 };
 
 class TheProcess extends React.Component {
   state = {
-    activeStep: 1,
+    activeStep: 1
   };
 
   onNextStep = e => {
